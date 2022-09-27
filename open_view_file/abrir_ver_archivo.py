@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter import filedialog as fd
 
-def archivo():
+def ver_archivo():
     tipos = (
                 ('archivos python', '*.py'),
                 ('de texto', '*.txt'),
@@ -34,7 +34,7 @@ txtArchivo = tk.Text(mw)
 
 btnArchivo = tk.Button(mw,
                         text="abrir",
-                        command=archivo,
+                       command=ver_archivo,
                         )
 
 btnLimpiar = tk.Button(mw,

@@ -31,7 +31,7 @@ for d in dados:
     c += 1
 
 # ubica el botón en la ventana
-btnJuega.grid(row=1, column=0, columnspan=c, pady=(10, 10))
+btnJuega.grid(row=1, column=0, columnspan=c, pady=(10, 10), sticky="WE")
 btnJuega.config(width=10)
 
 mw.mainloop()

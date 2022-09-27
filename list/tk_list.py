@@ -13,7 +13,7 @@ def btnBorraCB():
 
         # muestra pop-up de confirmación
         # la respuesta se guarda en "r"
-        r = messagebox.askyesno("Atención","¿Confirma borrar?\n" + s + "?")
+        r = messagebox.askyesno("Atención","¿Confirma borrar?\n" + s + "?", default=messagebox.NO)
 
         if r:
             # si confirma, borra el elemento seleccionado
@@ -26,7 +26,7 @@ def btnBorraCB():
 # callback para botón btnSalir
 def btnSaleCB():
     # muestra pop-up de confirmación
-    if messagebox.askyesno("Atención","¿Confirma cerrar?"):
+    if messagebox.askyesno("Atención","¿Confirma cerrar el programa?", default=messagebox.NO):
         # si confirma, termina programa
         top.destroy()
         exit()
@@ -73,8 +73,8 @@ txtItem = tkinter.Entry(top)
 btnAgregar.grid(row=0, column=1)
 txtItem.grid(row=0, column=0)
 lstOpciones.grid(row=1, column=0, rowspan=3)
-btnBorrar.grid(row = 2, column = 1, sticky='S')
-btnSalir.grid(row = 3, column = 1, sticky='S')
+btnBorrar.grid(row = 2, column = 1, sticky='WES')
+btnSalir.grid(row = 3, column = 1, sticky='WES')
 
 # coloca el foco en txtItem
 txtItem.focus_set()
