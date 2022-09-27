@@ -30,6 +30,7 @@ Examples using tkinter + python3.
 	* tk_dados_text.py: Very simple game. Generate N random numbers between 1 and 6 each time the platyer press a button
 	   
 	The number of numbers ("dices") can be changed with only one variable (CANT_DADOS)
+	
 	![dados](screenshots/tk_dados_text.png)
   
     
@@ -38,6 +39,7 @@ Examples using tkinter + python3.
 	* tk_list.py: Add and remove items from a ListBox. 
 	  
 	MessageBox, focus, keyboard shortcuts.
+	
 	![list](screenshots/tk_list.png)
 
   
