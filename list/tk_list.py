@@ -114,6 +114,6 @@ txtItem.focus_set()
 
 # agrega algunos elementos a la lista
 for item in range(1, 15):
-    lstOpciones.insert(tkinter.END, item)
+    lstOpciones.insert(tkinter.END, str(item))
 
 top.mainloop()     # queda esperando eventos
