@@ -8,8 +8,8 @@ def dar_fecha_hora_iso8601():
 
 def descuenta():
     if segundos.get() >0:
-        segundos.set(segundos.get() - 1)     
-                
+        segundos.set(segundos.get() - 1)
+
     tiempo.set(dar_fecha_hora_iso8601())
     mw.after(1000, descuenta)
 
